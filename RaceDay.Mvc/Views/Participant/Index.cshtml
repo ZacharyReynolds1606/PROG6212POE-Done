@@ -1,0 +1,3 @@
+﻿@model List<RaceDay.Contracts.Events.EventDto>
+<h1>Upcoming Events</h1>
+<div class="row g-3">@foreach (var item in Model) { <div class="col-md-6"><div class="card"><div class="card-body"><h5>@item.Name</h5><p>@item.EventDate.ToString("dd MMM yyyy") · @item.Location</p><p>@item.EventType · @item.DistanceKm km</p></div></div></div> }</div>

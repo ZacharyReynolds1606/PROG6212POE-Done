@@ -1,0 +1,9 @@
+﻿@model List<RaceDay.Contracts.Events.EventDto>
+<h1>Manage Events</h1>
+<a asp-action="CreateEvent" class="btn btn-primary mb-3">Create event</a>
+<div class="row g-3">
+@foreach (var item in Model)
+{
+	<div class="col-md-6"><div class="card h-100"><div class="card-body"><h5>@item.Name</h5><p>@item.Description</p><p>@item.EventDate.ToString("dd MMM yyyy") · @item.Location</p></div></div></div>
+}
+</div>

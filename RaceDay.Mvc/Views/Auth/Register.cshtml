@@ -1,0 +1,32 @@
+﻿@model RaceDay.Mvc.ViewModels.RegisterVm
+
+<h1>Register</h1>
+
+<form method="post">
+
+    <label>First Name</label>
+    <input asp-for="FirstName" class="form-control" />
+
+    <label>Last Name</label>
+    <input asp-for="LastName" class="form-control" />
+
+    <label>Email</label>
+    <input asp-for="Email" class="form-control" />
+
+    <label>Password</label>
+    <input asp-for="Password" class="form-control" />
+
+    <label>Role</label>
+    <select asp-for="Role" class="form-control">
+        <option>Participant</option>
+        <option>Organiser</option>
+    </select>
+
+    <button type="submit"
+            class="btn btn-success mt-3">
+
+        Register
+
+    </button>
+
+</form>
